@@ -1,0 +1,95 @@
+.story-section{
+  padding:40px 10% 120px;
+}
+
+.story-container{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:60px;
+}
+
+.quote-box{
+  border-left:8px solid #c7a27c;
+  padding-left:20px;
+
+  margin-bottom:50px;
+}
+
+.quote-box p{
+  font-size:1.4rem;
+  line-height:1.8;
+}
+
+.story-text{
+  color:#bdbdbd;
+  line-height:2;
+  margin-bottom:40px;
+}
+
+.story-divider{
+  margin:40px 0;
+
+  border-top:1px solid rgba(255,255,255,.1);
+}
+
+.story-left h3{
+  font-size:2rem;
+  margin-bottom:50px;
+}
+
+.story-left h3 span{
+  color:#c7a27c;
+  font-size:1rem;
+}
+
+.timeline h4{
+  margin-bottom:30px;
+
+  letter-spacing:4px;
+
+  color:#c7a27c;
+}
+
+.timeline-item{
+  display:flex;
+  gap:30px;
+
+  margin-bottom:25px;
+}
+
+.timeline-item span{
+  width:60px;
+
+  color:#c7a27c;
+}
+
+.story-right img{
+  width:100%;
+  border-radius:10px;
+}
+
+.image-footer{
+  display:flex;
+  justify-content:space-between;
+
+  margin-top:20px;
+
+  padding-bottom:15px;
+
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.current-role{
+  margin-top:25px;
+}
+
+.current-role span{
+  color:#c7a27c;
+
+  letter-spacing:3px;
+}
+
+.current-role p{
+  margin-top:10px;
+  color:#bdbdbd;
+}

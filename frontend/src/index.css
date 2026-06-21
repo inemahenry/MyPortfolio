@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+  radial-gradient(
+    circle at top left,
+    #1c1714 0%,
+    #0b0b0b 45%,
+    #050505 100%
+  );
+
+  color:white;
+
+  margin:0;
+  padding:0;
+
+  overflow-x:hidden;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+ul{
+  list-style:none;
+}
+
+.container{
+  width:90%;
+  max-width:1300px;
+  margin:auto;
+}
+
+:root{
+  --bg:#050505;
+  --primary:#c7a27c;
+  --text:#f5f5f5;
+  --text-secondary:#bdbdbd;
+}
