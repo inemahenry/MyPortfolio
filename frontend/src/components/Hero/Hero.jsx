@@ -1,7 +1,23 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 import heroImage from "../../assets/images/techdx.png";
 
 function Hero() {
+  const [lastName, setLastName] = useState("BRUNO");
+
+  useEffect(() => {
+    const names = ["BRUNO", "INEMA"];
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % names.length;
+      setLastName(names[index]);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="hero" id="hero">
 
@@ -22,19 +38,24 @@ function Hero() {
         <h1>
           HENRY
           <br />
-          BRUNO
+          <span className="changing-name">
+            {lastName}
+          </span>
         </h1>
 
         <p>
           Software Engineering student at AUCA,
-          Full Stack Developer and founder of InzuTrust.
+          Full Stack Developer and Founder of InzuTrust.
         </p>
 
-        <button>
-          Hire me →
-        </button>
+        <Link to="/contact">
+          <button className="hero-btn">
+            Hire Me →
+          </button>
+        </Link>
 
       </div>
+
       <div className="hero-fade"></div>
 
     </section>

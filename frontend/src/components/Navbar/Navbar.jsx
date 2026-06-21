@@ -27,10 +27,6 @@ function Navbar() {
   </li>
 
   <li>
-    <Link to="/education">Education</Link>
-  </li>
-
-  <li>
     <Link to="/services">Services</Link>
   </li>
 

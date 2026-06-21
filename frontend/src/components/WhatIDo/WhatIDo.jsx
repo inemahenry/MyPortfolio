@@ -15,7 +15,7 @@ function WhatIDo() {
 
           <div className="section-label">
 
-            <span>03</span>
+        
 
             <div className="line"></div>
 
